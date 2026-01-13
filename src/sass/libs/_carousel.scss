@@ -1,0 +1,102 @@
+.carousel {
+    position: relative;
+    padding: 20px 0 60px ;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    &__field {
+        display: flex;
+        // transition: transform 0.5s ease;
+        will-change: transform;
+        user-select: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+        cursor: grabbing;
+        &.dragging {
+            transition: none !important;
+            cursor: grabbing;
+        }
+    }
+    &__slide {
+       flex: 0 0 calc(100% / var(--visible-slides) - 20px);
+        min-width: 250px; /* Минимальная ширина *//* ← ФИКСИРОВАННАЯ ШИРИНА СЛАЙДА */
+        height: 200px;
+        margin: 0 10px;
+        cursor: grab;
+        img {
+            pointer-events: none; 
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+    &__btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 15px 10px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background 0.3s, opacity 0.3s;
+        &:hover {
+                background: rgba(0, 0, 0, 0.8);
+        }
+        /* Стили для заблокированных кнопок */
+        &:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+            background: rgba(0, 0, 0, 0.2);
+            &:hover {
+                background: rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+    &__btn_prev {
+        left: 10px;
+    }
+    &__btn_next {
+        right: 10px;
+    }
+    /* Контейнер индикаторов */
+    &__indicators {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* Отдельные точки-индикаторы */
+    &__indicator {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: none;
+        background: rgba(20, 20, 75, 0.4);
+        cursor: pointer;
+        transition: background 0.3s;
+        &:hover {
+                background: rgba(20, 20, 75, 0.7);
+
+        }
+    }
+
+    &__indicator.active {
+            background: rgba(20, 20, 75, 1);
+    }
+
+}
+.animated {
+    transition: transform 0.5s ease;
+}
+
+.dragging {
+    transition: none !important;
+}

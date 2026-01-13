@@ -1,0 +1,113 @@
+/* Основной контейнер слайдера */
+.slider-base {
+	position: relative;
+	width: 100%;
+	max-width: 800px; /* или по вашему усмотрению */
+	height: 550px;
+	margin: 0 auto;
+	overflow: hidden; /* скрываем все что выходит за границы */
+}
+
+/* Дорожка со слайдами */
+.slider-field {
+		display: flex;
+		user-select: none; /* запрет выделения текста */
+		-webkit-user-select: none; /* для Safari */
+		-moz-user-select: none; /* для Firefox */
+		-ms-user-select: none; /* для старых IE */
+}
+.slider-field.animated {
+		transition: transform 0.5s ease-in-out;
+}
+.slider-field.dragging {
+		cursor: grabbing;
+		img {
+				pointer-events: none; /*отключение событий для изображений*/
+		}
+}
+/* Отдельный слайд */
+.slide {
+	flex: 0 0 100%; /* каждый слайд занимает 100% ширины */
+	width: 100%;
+	height: 450px;
+	user-select: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+	/* Изображения внутри слайдов */
+	img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+	}
+}
+
+/* Кнопки навигации */
+.slider-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	border: none;
+	padding: 15px 10px;
+	cursor: pointer;
+	font-size: 18px;
+	transition: background 0.3s, opacity 0.3s;
+	&:hover {
+			background: rgba(0, 0, 0, 0.8);
+	}
+	/* Стили для заблокированных кнопок */
+	&:disabled {
+		opacity: 0.3;
+		cursor: not-allowed;
+		background: rgba(0, 0, 0, 0.2);
+		&:hover {
+			background: rgba(0, 0, 0, 0.2);
+		}
+	}
+}
+
+.slider-btn--prev {
+	left: 10px;
+}
+
+.slider-btn--next {
+	right: 10px;
+}
+
+/* Контейнер индикаторов */
+.slider-indicators {
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+/* Отдельные точки-индикаторы */
+.indicator {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	border: none;
+	background: rgba(20, 20, 75, 0.4);
+	cursor: pointer;
+	transition: background 0.3s;
+	&:hover {
+			background: rgba(20, 20, 75, 0.7);
+
+	}
+}
+
+.indicator.active {
+		background: rgba(20, 20, 75, 1);
+}
+
+
+
+@media (max-width: 576px) {
+		
+}
