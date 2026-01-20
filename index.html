@@ -9,43 +9,96 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="/src/icons/favicon/favicon-16x16.png">
 		<link rel="icon" type="image/x-icon" href="/src/icons/favicon/favicon.ico">
 		
-		<title>Dreamkam Tour</title>
+		<title>YOUmi</title>
 	</head>
 	<body>
-		<header class="header">
+		<header class="header" style="background-color: #F9FCFF;">
 			<!-- Навигационная панель -->
 			<div class="nav-panel">
 				<div class="container">
 					<div class="nav-panel__wrapper">
-						<div class="logo">
+						<div class="nav-panel__logo">
 							<a href="#">
-								<img src="/src/icons/logo.svg" alt="логотип">
+								<svg class="icon">
+									<use xlink:href="#icon-logo"></use>
+								</svg>
 							</a>
 						</div>
 						<nav >
-							<ul class="menu">
-								<li><a href="#shedule">Расписание тура</a></li>
-								<li><a href="#application">Как записаться</a></li>
-								<li><a href="#about">Команда</a></li>
+							<ul class="nav-panel__menu">
+								<li><a href="#">О нас</a></li>
+								<li><a href="#">Тарифы</a></li>
+								<li><a href="#">Психологам</a></li>
+								<li><a href="#">Материалы</a></li>
 							</ul>
 						</nav>
-						<button class="btn btn_main open-modal nav-panel__btn">Забронировать</button>
+						<a href="#" class="btn-link nav-panel__btn-pa">Личный кабинет</a>
+						<button class="nav-panel__btn-open">
+							<svg class="icon">
+								<use xlink:href="#icon-menu"></use>
+							</svg>
+						</button>
 						<!-- бургер -->
-						<div class="burger">
-							<button class="burger__open"><span></span></button>
+						<div class="burger ">
+							<button class="burger__close">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5.34665 3.77108C4.96656 3.55915 4.63176 3.45043 4.36129 3.47533C2.91668 3.60835 3.89144 6.34785 4.95971 7.32937C7.05064 9.2505 9.83316 12.033 10.2919 12.4917C11.0723 13.2722 16.7253 17.6964 17.2164 18.1875C17.6093 18.5803 19.3445 19.949 20.6312 19.7468C20.9679 20.0811 22.4357 19.1278 21.1442 18.4048C14.8966 14.9078 11.6 7.25776 5.34665 3.77108Z" fill="#7872B9" />
+									<path d="M20.2306 5.34592C20.4426 4.96583 20.5513 4.63103 20.5264 4.36056C20.3934 2.91595 17.6539 3.8907 16.6723 4.95898C14.7512 7.04991 11.9687 9.83243 11.51 10.2911C10.7295 11.0716 6.30535 16.7246 5.81425 17.2157C5.42137 17.6086 4.05266 19.3437 4.25493 20.6305C3.92058 20.9672 4.87394 22.4349 5.59687 21.1434C9.09395 14.8959 16.7439 11.5992 20.2306 5.34592Z" fill="#7872B9" />
+								</svg>
+							</button>
 							<ul class="burger__menu ">
-								<li><a href="#shedule">Расписание тура</a></li>
-								<li><a href="#application">Как записаться</a></li>
-								<li><a href="#about">Команда</a></li>
-								<li><a href="#price">Стоимость</a></li>
+								<li><a href="#">О нас</a></li>
+								<li><a href="#">Тарифы</a></li>
+								<li><a href="#">Психологам</a></li>
+								<li><a href="#">Материалы</a></li>
+								<li><a href="#">Личный кабинет</a></li>
+								<li><a href="#">Вопросы-ответы</a></li>
+								<li><a href="#">Войти
+										<svg class="icon">
+											<use xlink:href="#icon-arrow-logIn"></use>
+										</svg>
+									</a>
+								</li>
 							</ul>
-							<button class="btn btn_main open-modal burger__btn">Забронировать</button>
+							<div class="burger__social">
+								<div class="burger__icon">
+									<svg class="icon">
+										<use xlink:href="#icon-vk"></use>
+									</svg>
+								</div>
+								<div class="burger__icon">
+									<svg class="icon">
+										<use xlink:href="#icon-telegram"></use>
+									</svg>
+								</div>
+								<div class="burger__icon">
+									<svg class="icon">
+										<use xlink:href="#icon-dzen"></use>
+									</svg>
+								</div>
+							</div>
 						</div>
 						<!-- окончание бургера -->
 					</div>
 				</div>
 			</div>
 			
+			<div class="container">
+				<div class="header__first">
+					<div class="header__text-box">
+						<h1 class="header__first-title title-1">Вместе мы справимся</h1>
+						<h2 class="header__first-subtitle">Найдите своего психолога онлайн </h2>
+						<button class="btn header__btn">Найти психолога</button>
+						<div class="header__txt">2770 руб. за 50 минут сессии</div>
+					</div>
+					<div class="header__img">
+						<img src="/src/img/header/home.svg" alt="обнимашки">
+					</div>
+					<a href="#" class="header__support-chat">
+						<img src="/src/img/header/suppotr-chat.svg" alt="чат поддержки">
+					</a>
+				</div>
+			</div>
 		</header>
 
 		<h2>бесконечный слайдер</h2>

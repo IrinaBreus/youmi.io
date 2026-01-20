@@ -1,26 +1,50 @@
+import calcScroll from "./calcScroll";
+
 const burger = () => {
     const burger = document.querySelector('.burger'),
-          trigger = burger.querySelector('.burger__open'),
-          links = burger.querySelectorAll('.burger__menu li'),
-          carousel = document.querySelector('.carousel');
+          header = document.querySelector('.header'),
+          open = document.querySelector('.nav-panel__btn-open'),
+          close = burger.querySelector('.burger__close'),
+          links = burger.querySelectorAll('.burger__menu li');
 
-    trigger.addEventListener('click', () => {
-        burger.classList.toggle('active');
-        carousel.classList.toggle('hidden');
-        if (burger.classList.contains('active')) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = '';
-        }
+    const scroll = calcScroll();
+
+    open.addEventListener('click', () => {
+        burger.classList.add('active');
+        document.body.style.marginRight = `${scroll}px`;
+        document.body.style.overflow = 'hidden';
     });
     
+    close.addEventListener('click', closeBurger);
+
+    document.addEventListener('keydown', (e) => {
+        if (e.code === 'Escape' ) {
+            closeBurger();
+        } 
+    });
+    
+    document.addEventListener('click', (e) => {
+        if (e.target === header && burger.classList.contains('active')) {
+            closeBurger();
+        }
+    })
+    burger.addEventListener('click', (e) => {
+        if (e.target === burger ) {
+            closeBurger();
+        }
+    });
+
     links.forEach(link => {
         link.addEventListener('click', () => {
-            burger.classList.remove('active');
-            carousel.classList.remove('hidden');
-            document.body.style.overflow = '';
+            closeBurger();
         })
     })
+
+    function closeBurger () {
+        burger.classList.remove('active');
+        document.body.style.overflow = '';
+        document.body.style.marginRight = '0px';
+    }
 }
 
 export default burger;

@@ -1,10 +1,16 @@
 :root {
-    --black: #212121;
+    --black: #424257;;
     --white: #FFFFFF;
-    --shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.25);
-
-    --font-sans: "Open Sans", sans-serif;
-    --visible-slides: 3; //количество видимых слайдов для сладера carousel
+    --txt-color: #4d4d52;
+    --blue-light: #ebf5ff;
+    --blue: #cde1ff;
+    --violet-1: #7872b9;
+    --violet-2: #9691d2;
+    --violet-3: #d7c3e6;
+    --violet-4: #f1e6f7;
+    --red: #fa788c;
+    --red-light: #faaab4;
+    --yellow: #facd6e;
 }
 
 * {
@@ -12,9 +18,12 @@
     padding: 0;
     box-sizing: border-box;
     color: var(--black);
-    font-family: "Roboto", sans-serif;;
+    font-family: "Montserrat", sans-serif;
+    color: var(--txt-color);
 }
-
+body {
+    overflow-x: hidden;
+}
 a {
     text-decoration: none;
 }
@@ -22,31 +31,3 @@ ul, ol[class] {
     list-style: none;
 }
 
-/* Для браузеров на движке WebKit (Chrome, Safari, Edge) */
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-/* Для Firefox */
-input[type="number"] {
-    -moz-appearance: textfield;
-}
-
-@media (max-width: 992px) {
-    :root {
-        --visible-slides: 2;
-    }
-}
-@media (max-width: 764px) {
-    :root {
-        --visible-slides: 2;
-    }
-}
-
-@media (max-width: 576px) {
-    :root {
-        --visible-slides: 1;
-    }
-}
