@@ -11,6 +11,7 @@
     --red: #fa788c;
     --red-light: #faaab4;
     --yellow: #facd6e;
+    --visible-slides: 3;
 }
 
 * {
@@ -31,3 +32,19 @@ ul, ol[class] {
     list-style: none;
 }
 
+@media (max-width: 992px) {
+    :root {
+        --visible-slides: 2;
+    }
+}
+@media (max-width: 764px) {
+    :root {
+        --visible-slides: 2;
+    }
+}
+
+@media (max-width: 576px) {
+    :root {
+        --visible-slides: 1;
+    }
+}

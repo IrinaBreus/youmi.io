@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollUp();
     // calcScroll();
 
-    sliderInfinity('.slider-infinity');
-    sliderSimple('.slider-simple');
-    carouselMultyple('.carousel__multiple');
-    carouselInfinite('.carousel__infinite');
+    // sliderInfinity('.slider-infinity');
+    // sliderSimple('.slider-simple');
+    // carouselInfinite('.carousel__infinite');
+    carouselMultyple('.therapy-perks__carousel');
 
     burger();
     modals();

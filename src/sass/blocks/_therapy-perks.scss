@@ -1,0 +1,111 @@
+.therapy-perks {
+    padding: 82px 0 100px;
+    &__title {
+        margin-bottom: 80px;
+    }
+    &__content {
+        // max-width: 380px;
+        position: relative;
+        padding: 0 40px 44px;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 110px;
+            left: 0;
+            border-radius: 20px;
+            display: block;
+            width: 100%;
+            height: calc(100% - 110px);
+            background: var(--blue-light);
+            z-index: -1;
+        }
+        img {
+            width: 220px;
+            height: 220px;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 150%;
+            letter-spacing: 0.02em;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            letter-spacing: 0.01em;
+            text-align: center;
+            color: var(--txt-color);
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .therapy-perks {
+        padding: 62px 0 80px;
+        &__title {
+            margin-bottom: 60px;
+        }
+        &__content {
+            // max-width: 380px;
+            padding: 0 30px 36px;
+            &::after {
+                top: 90px;
+                height: calc(100% - 90px);
+            }
+            img {
+                width: 180px;
+                height: 180px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 576px) {
+    .therapy-perks {
+        padding: 40px 0 45px;
+        &__title {
+            margin-bottom: 30px;
+        }
+        &__content {
+            // max-width: 380px;
+            padding: 0 20px 30px;
+            &::after {
+                top: 60px;
+                border-radius: 16px;
+                height: calc(100% - 60px);
+            }
+            img {
+                width: 120px;
+                height: 120px;
+            }
+            h3 {
+                font-size: 18px;
+                margin-bottom: 8px;
+            }
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 140%;
+                letter-spacing: 0.01em;
+                text-align: center;
+                color: var(--txt-color);
+            }
+        }
+    }
+}

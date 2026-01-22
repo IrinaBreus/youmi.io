@@ -101,52 +101,160 @@
 			</div>
 		</header>
 
-
-		<!-- Онлайн-психотерапия становится комфортнее -->
-		<section class="therapy-perks">
-			<div class="container">
-				<h2 class="title-2 therapy-perks__title">Онлайн-психотерапия становится комфортнее</h2>
-				
-				<div class="carousel therapy-perks__carousel">
-					<!-- Основной контейнер со слайдами -->
-					<div class="carousel__field">
-						<div class="carousel__slide carousel__slide-1">
-							<div class="therapy-perks__content">
-								<img src="src/img/index/planet.svg" alt="планета">
-								<h3>Свобода возможностей</h3>
-								<p>Проходите сессию из любой точки мира, не тратьте время на дорогу</p>
-							</div>
-						</div>
-						<div class="carousel__slide carousel__slide-2">
-							<div class="therapy-perks__content">
-								<img src="src/img/index/mark.svg" alt="маркер проверки">
-								<h3>Будьте уверены в&nbsp;своем выборе</h3>
-								<p>Мы работаем только с квалифицированными специалистами, которые прошли строгий отбор</p>
-							</div>
-						</div>
-						<div class="carousel__slide carousel__slide-3">
-							<div class="therapy-perks__content">
-								<img src="src/img/index/target.svg" alt="мишень">
-								<h3>Ваш запрос важен</h3>
-								<p>Подберем опытного специалиста под ваш запрос</p>
-							</div>
-						</div>
-						
-					</div>
-
-					<!-- Кнопки навигации -->
-					
-
-					<!-- Индикаторы -->
-					<div class="carousel__indicators">
-						<button class="carousel__indicator active" aria-label="Перейти к слайду 1"></button>
-						<button class="carousel__indicator" aria-label="Перейти к слайду 2"></button>
-						<button class="carousel__indicator" aria-label="Перейти к слайду 3"></button>
-					</div>
+		<h2>бесконечный слайдер</h2>
+		<div class="slider-base slider-infinity">
+			<!-- Основной контейнер со слайдами -->
+			<div class="slider-field">
+				<div class="slide slide-1">
+					<img src="/src/img/header/slider1.jpg" alt="Описание 1">
 				</div>
-							
+				<div class="slide slide-2">
+					<img src="/src/img/header/slider2.jpg" alt="Описание 2">
+				</div>
+				<div class="slide slide-3">
+					<img src="/src/img/header/slider3.jpg" alt="Описание 3">
+				</div>
+				<div class="slide slide-4">
+					<img src="/src/img/header/slider4.jpg" alt="Описание 2">
+				</div>
 			</div>
-		</section>
+
+			<!-- Кнопки навигации -->
+			<button class="slider-btn slider-btn--prev" aria-label="Предыдущий слайд">
+				←
+			</button>
+			<button class="slider-btn slider-btn--next" aria-label="Следующий слайд">
+				→
+			</button>
+
+			<!-- Индикаторы -->
+			<div class="slider-indicators">
+				<button class="indicator active" aria-label="Перейти к слайду 1"></button>
+				<button class="indicator" aria-label="Перейти к слайду 2"></button>
+				<button class="indicator" aria-label="Перейти к слайду 3"></button>
+			</div>
+		</div>
+		
+		<h2>лимитированный слайдер</h2>
+		<div class="slider-base slider-simple">
+			<!-- Основной контейнер со слайдами -->
+			<div class="slider-field">
+				<div class="slide slide-1">
+					<img src="/src/img/header/slider1.jpg" alt="Описание 1">
+				</div>
+				<div class="slide slide-2">
+					<img src="/src/img/header/slider2.jpg" alt="Описание 2">
+				</div>
+				<div class="slide slide-3">
+					<img src="/src/img/header/slider3.jpg" alt="Описание 3">
+				</div>
+				<div class="slide slide-4">
+					<img src="/src/img/header/slider4.jpg" alt="Описание 2">
+				</div>
+			</div>
+
+			<!-- Кнопки навигации -->
+			<button class="slider-btn slider-btn--prev" aria-label="Предыдущий слайд">
+				←
+			</button>
+			<button class="slider-btn slider-btn--next" aria-label="Следующий слайд">
+				→
+			</button>
+
+			<!-- Индикаторы -->
+			<div class="slider-indicators">
+				<button class="indicator active" aria-label="Перейти к слайду 1"></button>
+				<button class="indicator" aria-label="Перейти к слайду 2"></button>
+				<button class="indicator" aria-label="Перейти к слайду 3"></button>
+			</div>
+		</div>
+
+		<h2>лимитированный слайдер-карусель</h2>
+		<div class="carousel carousel__multiple">
+			<!-- Основной контейнер со слайдами -->
+			<div class="carousel__field">
+				<div class="carousel__slide carousel__slide-1">
+					<img src="/src/img/slide/slide1.jpg" alt="Описание 1">
+				</div>
+				<div class="carousel__slide carousel__slide-2">
+					<img src="/src/img/slide/slide2.jpg" alt="Описание 2">
+				</div>
+				<div class="carousel__slide carousel__slide-3">
+					<img src="/src/img/slide/slide3.jpg" alt="Описание 3">
+				</div>
+				<div class="carousel__slide carousel__slide-4">
+					<img src="/src/img/slide/slide4.jpg" alt="Описание 2">
+				</div>
+				<div class="carousel__slide carousel__slide-2">
+					<img src="/src/img/slide/slide3.jpg" alt="Описание 3">
+				</div>
+				<div class="carousel__slide carousel__slide-4">
+					<img src="/src/img/slide/slide4.jpg" alt="Описание 2">
+				</div>
+			</div>
+
+			<!-- Кнопки навигации -->
+			<button class="carousel__btn carousel__btn_prev" aria-label="Предыдущий слайд">
+				←
+			</button>
+			<button class="carousel__btn carousel__btn_next" aria-label="Следующий слайд">
+				→
+			</button>
+
+			<!-- Индикаторы -->
+			<div class="carousel__indicators">
+				<button class="carousel__indicator active" aria-label="Перейти к слайду 1"></button>
+				<button class="carousel__indicator" aria-label="Перейти к слайду 2"></button>
+				<button class="carousel__indicator" aria-label="Перейти к слайду 3"></button>
+			</div>
+		</div>
+
+		<h2>бесконечный слайдер-карусель</h2>
+		<div class="carousel carousel__infinite">
+			<!-- Основной контейнер со слайдами -->
+			<div class="carousel__field">
+				<div class="carousel__slide carousel__slide-1">
+					<img src="/src/img/slide/slide8.jpg" alt="Описание 2">
+					<p>слайд 1</p>
+				</div>
+				<div class="carousel__slide carousel__slide-2">
+					<img src="/src/img/slide/slide7.jpg" alt="Описание 2">
+					<p>слайд 2</p>
+				</div>
+				<div class="carousel__slide carousel__slide-3">
+					<img src="/src/img/slide/slide6.jpg" alt="Описание 2">
+					<p>слайд 3</p>
+				</div>
+				<div class="carousel__slide carousel__slide-4">
+					<img src="/src/img/slide/slide5.jpg" alt="Описание 3">
+					<p>слайд 4</p>
+				</div>
+				<div class="carousel__slide carousel__slide-5">
+					<img src="/src/img/slide/slide4.jpg" alt="Описание 1">
+					<p>слайд 5</p>
+				</div>
+				<div class="carousel__slide carousel__slide-6">
+					<img src="/src/img/slide/slide3.jpg" alt="Описание 3">
+					<p>слайд 6</p>
+				</div>
+			</div>
+
+			<!-- Кнопки навигации -->
+			<button class="carousel__btn carousel__btn_prev" aria-label="Предыдущий слайд">
+				←
+			</button>
+			<button class="carousel__btn carousel__btn_next" aria-label="Следующий слайд">
+				→
+			</button>
+
+			<!-- Индикаторы -->
+			<div class="carousel__indicators">
+				<button class="carousel__indicator active" aria-label="Перейти к слайду 1"></button>
+				<button class="carousel__indicator" aria-label="Перейти к слайду 2"></button>
+				<button class="carousel__indicator" aria-label="Перейти к слайду 3"></button>
+			</div>
+		</div>
+		
 		<!-- футер -->
 		<footer class="footer">
 			<div class="container">
