@@ -2,9 +2,9 @@
     padding: 82px 0 100px;
     &__title {
         margin-bottom: 80px;
+        text-align: center;
     }
     &__content {
-        // max-width: 380px;
         position: relative;
         padding: 0 40px 44px;
         &::after {

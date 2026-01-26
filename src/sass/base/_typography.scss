@@ -10,8 +10,18 @@
     font-size: 40px;
     line-height: 130%;
     letter-spacing: 0.02em;
-    text-align: center;
     color: var(--violet-1);
+    &_line {
+        &::after {
+            content: '';
+            display: block;
+            background: url('/src/img/line-title.svg') top right / contain no-repeat;
+            width: 321px;
+            height: 11px;
+            margin-left: auto;
+            margin-right: 80px;
+        }
+    }
 }
 .subtitle {
     font-weight: 600;
@@ -23,17 +33,39 @@
 
 @media (max-width: 1200px) {
 }
+
 @media (max-width: 992px) {
     .title-1 {
         font-size: 42px;
     }
+    .title-2 {
+        font-size: 32px;
+        letter-spacing: 0.01em;
+        &_line {
+            &::after {
+                margin-right: 60px;
+            }
+        }
+    }
 }
+
 @media (max-width: 768px) {
     .title-1 {
         font-size: 36px;
         text-align: center;
     }
+    .title-2 {
+        font-size: 24px;
+        letter-spacing: 0.01em;
+        &_line {
+            &::after {
+                width: 200px;
+                margin-right: 40px;
+            }
+        }
+    }
 }
+
 @media (max-width: 576px) {
     .title-1 {
         font-size: 24px;
@@ -41,6 +73,25 @@
     }
     .title-2 {
         font-size: 20px;
+        &_line {
+            &::after {
+                width: 150px;
+                height: 6px;
+                margin-right: 20px;
+            }
+        }
+    }
+    .subtitle {
+        font-size: 16px;
+    }
+}
+@media (max-width: 375px) {
+    .title-2 {
+        &_line {
+            &::after {
+                margin-right: 120px;
+            }
+        }
     }
     .subtitle {
         font-size: 16px;

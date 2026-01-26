@@ -28,6 +28,19 @@ document.addEventListener('DOMContentLoaded', () => {
     carouselMultyple('.therapy-perks__carousel');
 
     burger();
-    modals();
+    // modals();
 
+    let carouselInitialized = false;
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth <= 768 && !carouselInitialized) {
+            carouselMultyple('.psy-proof__carousel');
+            carouselInitialized = true;
+        }
+    });
+
+    if (window.innerWidth <= 768) {
+        carouselMultyple('.psy-proof__carousel');
+        carouselInitialized = true;
+    }
 });

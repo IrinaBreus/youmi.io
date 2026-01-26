@@ -78,7 +78,12 @@
         &__slide {
             flex: 1 0 calc(100% / var(--visible-slides) - 10px);
         }
-
+        
+    }
+    .psy-proof > .carousel{
+        &__slide {
+            flex: 1 0 calc(100% / 4 - 10px);
+        }
     }
 }
 

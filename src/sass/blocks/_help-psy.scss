@@ -1,4 +1,5 @@
 .help-psy {
+    overflow-x: hidden;
     background: var(--bg-color);
     padding: 80px 0 90px;
     &__subtitle {
@@ -7,6 +8,7 @@
     }
     &__title {
         margin-bottom: 20px;
+        text-align: center;
     }
     &__txt {
         width: 50%;
