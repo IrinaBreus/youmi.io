@@ -80,11 +80,6 @@
         }
         
     }
-    .psy-proof > .carousel{
-        &__slide {
-            flex: 1 0 calc(100% / 4 - 10px);
-        }
-    }
 }
 
 @media (max-width: 576px) {
