@@ -40,7 +40,7 @@
     &__support-chat {
         position: absolute;
         right: 0;
-        bottom: -88px;
+        bottom: -68px;
         cursor: pointer;
         transition: all .3s;
         width: 40px;
@@ -91,7 +91,7 @@
             font-size: 18px;
         }
         &__support-chat {
-            bottom: -68px;
+            bottom: -48px;
         }
     }
 }
@@ -147,8 +147,7 @@
             font-size: 14px;
         }
         &__support-chat {
-            bottom: -78px;
-
+            bottom: -58px;
         }
     }
 }
