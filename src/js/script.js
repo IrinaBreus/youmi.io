@@ -10,6 +10,7 @@ import sliderInfinity from './modules/sliders/sliderInfinity';
 import sliderSimple from './modules/sliders/sliderSimple';
 import carouselMultyple from './modules/sliders/carouselMultyple';
 import carouselInfinite from './modules/sliders/carouselInfinity';
+import accordeon from './modules/accordeon';
 
 document.addEventListener('DOMContentLoaded', () => {
     'use stricti';
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     carouselMultyple('.therapy-perks__carousel');
 
     burger();
+    accordeon('.faq-main');
     // modals();
 
     let carouselInitialized = false;
