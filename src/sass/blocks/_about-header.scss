@@ -1,0 +1,128 @@
+.about {
+    &__header {
+        display: grid;
+        grid-template-columns: 7fr 5fr;
+        align-items: center;
+        gap: 50px;
+    }
+    &__title {
+        line-height: 200%;
+        span {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 222px;
+                height: 85px;
+                background: url('/src/img/outline.svg') center center / contain no-repeat;
+                top: -15px;
+                left: -24px;
+            }
+        }
+    }
+    &__header-img {
+        width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .about {
+        &__header {
+            grid-template-columns: 2fr 1fr;
+        }
+        &__title {
+            margin-left: 30px;
+        }
+        &__header-img {
+            padding-right: 30px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .about {
+        &__title {
+            font-size: 32px;
+            line-height: 200%;
+            span {
+                font-size: 32px;
+                &::before {
+                    content: '';
+                    width: 162px;
+                    height: 65px;
+                    top: -10px;
+                    left: -20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        &__header {
+            grid-template-columns: 1fr;
+        }
+        &__title {
+            font-size: 40px;
+            line-height: 180%;
+            margin-left: 0;
+            span {
+                font-size: 40px;
+                &::before {
+                    width: 212px;
+                    height: 80px;
+                    top: -14px;
+                    left: -28px;
+                }
+            }
+        }
+        &__header-img {
+            padding-right: 0;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .about {
+        &__header {
+            gap: 40px;
+        }
+        &__title {
+            font-size: 24px;
+            span {
+                font-size: 24px;
+                &::before {
+                    width: 122px;
+                    height: 65px;top: -16px;
+                    left: -16px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 425px) {
+    .about {
+        &__header {
+            gap: 40px;
+        }
+        &__title {
+            font-size: 18px;
+            span {
+                font-size: 18px;
+                &::before {
+                    width: 96px;
+                    height: 65px;
+                    top: -18px;
+                }
+            }
+        }
+    }
+}
+

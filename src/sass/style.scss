@@ -14,6 +14,7 @@
 @use 'libs/slider';
 @use 'libs/carousel';
 
+// for index
 @use 'blocks/footer';
 @use 'blocks/header';
 @use 'blocks/therapy-perks';
@@ -23,3 +24,5 @@
 @use 'blocks/faq';
 @use 'blocks/care';
 @use 'blocks/assistance';
+// for about
+@use 'blocks/about-header';
