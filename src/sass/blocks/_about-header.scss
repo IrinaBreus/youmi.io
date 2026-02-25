@@ -29,6 +29,14 @@
             object-fit: contain;
         }
     }
+    &__carousel {
+        .therapy-perks__content {
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
 }
 
 @media (max-width: 1200px) {
@@ -41,6 +49,14 @@
         }
         &__header-img {
             padding-right: 30px;
+        }
+        &__carousel {
+            .therapy-perks__content {
+                img {
+                    width: 180px;
+                    height: 180px;
+                }
+            }
         }
     }
 }
@@ -58,6 +74,14 @@
                     height: 65px;
                     top: -10px;
                     left: -20px;
+                }
+            }
+        }
+        &__carousel {
+            .therapy-perks__content {
+                img {
+                    width: 140px;
+                    height: 140px;
                 }
             }
         }
@@ -85,6 +109,14 @@
         }
         &__header-img {
             padding-right: 0;
+        }
+        &__carousel {
+            .therapy-perks__content {
+                img {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
         }
     }
 }

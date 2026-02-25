@@ -1,0 +1,98 @@
+.specialists {
+    &__about {
+        background: var(--bg-color);
+    }
+    &__carousel {
+        padding-top: 80px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            pointer-events: none;
+            -webkit-user-select: none;  /* для Safari */
+            user-select: none;          /* запрещает выделение */
+            -webkit-user-drag: none;    /* запрещает перетаскивание в Safari */
+            -khtml-user-drag: none;     /* для старых браузеров */
+            -moz-user-drag: none;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .specialists {
+        &__content {
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .specialists {
+        &__carousel {
+            padding-top: 60px;
+            .carousel__slide {
+                flex: 1 0 0;
+            }
+        }
+        &__content {
+            img {
+                width: 160px;
+                height: 160px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .specialists {
+        &__carousel {
+            --visible-slides: 2;
+            padding-top: 40px;
+            .carousel__slide {
+                flex: 1 0 calc(100% / var(--visible-slides) - 10px );
+            }
+            .carousel__field {
+                width: 88%;
+                margin: 0 auto;
+            }
+        }
+        &__content {
+            img {
+                width: 180px;
+                height: 180px;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .specialists {
+        &__carousel {
+            padding-top: 30px;
+            --visible-slides: 1;
+            .carousel__field {
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+        &__content {
+            img {
+                width: 120px;
+                height: 120px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+

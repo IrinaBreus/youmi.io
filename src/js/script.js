@@ -27,21 +27,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // sliderSimple('.slider-simple');
     // carouselInfinite('.carousel__infinite');
     carouselMultyple('.therapy-perks__carousel');
-
+    carouselMultyple('.about__carousel');
+    
     burger();
     accordeon('.faq-main');
     // modals();
-
+    
     let carouselInitialized = false;
-
+    
     window.addEventListener('resize', () => {
         if (window.innerWidth <= 768 && !carouselInitialized) {
+            carouselMultyple('.specialists__carousel', 'btns');
             carouselMultyple('.psy-proof__carousel');
             carouselInitialized = true;
         }
     });
-
+    
     if (window.innerWidth <= 768) {
+        carouselMultyple('.specialists__carousel', 'btns');
         carouselMultyple('.psy-proof__carousel');
         carouselInitialized = true;
     }
