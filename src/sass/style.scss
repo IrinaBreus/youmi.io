@@ -27,6 +27,10 @@
 // for about
 @use 'blocks/about-header';
 @use 'blocks/about-specialists';
-@use 'blocks/_about-history';
+@use 'blocks/about-history';
 @use 'blocks/about-magazine';
+// for contacts
 @use 'blocks/contacts';
+// for rates
+@use 'blocks/rates-header';
+@use 'blocks/rates-price';

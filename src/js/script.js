@@ -37,15 +37,17 @@ document.addEventListener('DOMContentLoaded', () => {
     
     window.addEventListener('resize', () => {
         if (window.innerWidth <= 768 && !carouselInitialized) {
-            carouselMultyple('.specialists__carousel', 'btns');
             carouselMultyple('.psy-proof__carousel');
+            carouselMultyple('.specialists__carousel', 'btns');
+            carouselMultyple('.price__carousel', 'btns');
             carouselInitialized = true;
         }
     });
     
     if (window.innerWidth <= 768) {
-        carouselMultyple('.specialists__carousel', 'btns');
         carouselMultyple('.psy-proof__carousel');
+        carouselMultyple('.specialists__carousel', 'btns');
+        carouselMultyple('.price__carousel', 'btns');
         carouselInitialized = true;
     }
 });
