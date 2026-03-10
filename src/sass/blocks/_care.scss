@@ -57,6 +57,14 @@
         margin: 0 auto;
     }
 }
+.care.rates-care {
+    .care__wrapper {
+        grid-template-columns: 7fr 60px 4fr;
+    }
+    .care__subtitle {
+        width: 70%;
+    }
+}
 
 @media (max-width: 1200px) {
     .care {
@@ -69,6 +77,11 @@
         }
         &__img {
             grid-area: 1 / 2 / 4 / 3;
+        }
+    }
+    .care.rates-care {
+        .care__wrapper {
+            grid-template-columns: 8fr 4fr;
         }
     }
 }
@@ -166,6 +179,13 @@
         }
         &__img {
             grid-area: 4 / 1 / 5 / 2;
+            max-width: 380px;
+            margin: 0 auto;
+        }
+    }
+    .care.rates-care {
+        .care__wrapper {
+            grid-template-columns: 1fr;
         }
     }
 }
