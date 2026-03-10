@@ -1,0 +1,269 @@
+.psyhologists-steps {
+    padding: 120px 0;
+    background: var(--bg-color);
+    &__title {
+        text-align: center;
+        margin-bottom: 96px;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 120px;
+        margin-bottom: 120px;
+    }
+    &__item {
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        align-items: center;
+        &:nth-child(odd) {
+            width: 55%;
+            align-self: flex-start;
+        }
+        &:nth-child(even) {
+            width: 50%;
+            align-self: flex-end;
+        }
+        &:not(.last) {
+            position: relative;
+            &::after {
+                content: '';
+            }
+        }
+        &:nth-child(1)::after {
+            width: 80px;
+            height: 120px;
+            background: url('/src/img/psyhologists/arrow-1.svg') center center / contain no-repeat;
+            position: absolute;
+            top: 60%;
+            left: 120%;
+        }
+        &:nth-child(2)::after {
+            width: 122px;
+            height: 104px;
+            background: url('/src/img/psyhologists/arrow-2.svg') center center / contain no-repeat;
+            position: absolute;
+            top: 70%;
+            left: -45%;
+        }
+        &:nth-child(3) {
+            p {
+                width: 90%;
+            }
+            &::after {
+                width: 88px;
+                height: 120px;
+                background: url('/src/img/psyhologists/arrow-3.svg') center center / contain no-repeat;
+                position: absolute;
+                top: 70%;
+                left: 110%;
+            }
+        }
+    }
+    &__num {
+        grid-area: 1 / 1 / 2 / 3;
+        width: 200px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &__descr {
+        grid-area: 1 / 2 / 2 / 3;
+        h3 {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 140%;
+            letter-spacing: 0.01em;
+            margin-bottom: 6px;
+        }
+    }
+    &__btn {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    .psyhologists-steps {
+        &__item {
+            &:nth-child(odd) {
+                width: 65%;
+            }
+            &:nth-child(even) {
+                width: 60%;
+            }
+            &:nth-child(1)::after {
+                left: 110%;
+            }
+            &:nth-child(2)::after {
+                left: -35%;
+            }
+            &:nth-child(3) {
+                p {
+                    width: 90%;
+                }
+                &::after {
+                    left: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .psyhologists-steps {
+        padding: 100px 0;
+        &__title {
+            margin-bottom: 76px;
+        }
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+            margin-bottom: 100px;
+        }
+        &__item {
+            grid-template-columns: 100px 1fr;
+            &:nth-child(odd) {
+                width: 75%;
+            }
+            &:nth-child(even) {
+                width: 65%;
+            }
+            &:nth-child(1)::after {
+                width: 70px;
+                height: 100px;
+                top: 70%;
+                left: 100%;
+            }
+            &:nth-child(2)::after {
+                width: 112px;
+                height: 94px;
+                top: 70%;
+                left: -35%;
+            }
+            &:nth-child(3) {
+                &::after {
+                    width: 78px;
+                    height: 110px;
+                    top: 70%;
+                    left: 95%;
+                }
+            }
+        }
+        &__num {
+            width: 160px;
+        }
+        &__descr {
+            grid-area: 1 / 2 / 2 / 3;
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .psyhologists-steps {
+        padding: 80px 0;
+        &__title {
+            margin-bottom: 66px;
+        }
+        &__wrapper {
+            gap: 80px;
+            margin-bottom: 80px;
+        }
+        &__item {
+            grid-template-columns: 80px 1fr;
+            &:nth-child(odd) {
+                width: 85%;
+            }
+            &:nth-child(even) {
+                width: 80%;
+            }
+            &:nth-child(1)::after {
+                top: 80%;
+                left: 100%;
+            }
+            &:nth-child(2)::after {
+                top: 70%;
+                left: -30%;
+                transform: rotate(-25deg);
+            }
+            &:nth-child(3) {
+                &::after {
+                    top: 80%;
+                    left: 100%;
+                    transform: rotate(15deg);
+                }
+            }
+        }
+        &__num {
+            width: 140px;
+        }
+        &__btn {
+            display: block;
+            margin: 0 auto;
+            width: 75%;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .psyhologists-steps {
+        padding: 50px 0;
+        &__title {
+            margin-bottom: 50px;
+        }
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            margin-bottom: 40px;
+        }
+        &__item {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            gap: 20px;
+            &:nth-child(odd) {
+                width: 100%;
+                align-self: center;
+            }
+            &:nth-child(even) {
+                width: 100%;
+                align-self: center;
+            }
+            &:not(.last) {
+                &::after {
+                    display: none;
+                }
+            }
+            &:nth-child(3) {
+                p {
+                    width: 100%;
+                }
+            }
+        }
+        &__num {
+            grid-area: 1 / 1 / 2 / 2;
+            width: 50px;
+        }
+        &__descr {
+            grid-area: 2 / 1 / 3 / 2;
+            h3 {
+                font-size: 16px;
+                text-align: center;
+            }
+            p {
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+        &__btn {
+            width: 100%;
+        }
+    }
+}
+
