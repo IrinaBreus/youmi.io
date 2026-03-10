@@ -16,6 +16,10 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         about: resolve(__dirname, 'about.html'),
+        contacts: resolve(__dirname, 'contacts.html'),
+        rates: resolve(__dirname, 'rates.html'),
+        tariff: resolve(__dirname, 'tariff.html'),
+        psyhologists: resolve(__dirname, 'psyhologists.html'),
         // catalog: resolve(__dirname, 'catalog.html'),
         // blog: resolve(__dirname, 'blog.html'),
       },
