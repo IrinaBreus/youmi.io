@@ -1,0 +1,69 @@
+.expectations {
+    padding: 120px 0;
+    &__title {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    &__inner {
+        display: flex;
+        gap: 30px;
+        .psy-proof__item {
+            display: block;
+        }
+        .psy-proof__txt {
+            width: 100%;
+        }
+    }
+    &__carousel {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .expectations {
+        padding: 100px 0;
+        &__title {
+            margin-bottom: 60px;
+        }
+        &__wrapper {
+            h3 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .expectations {
+        padding: 80px 0;
+        &__title {
+            margin-bottom: 60px;
+        }
+        &__wrapper {
+            display: none;
+        }
+        &__carousel {
+            display: block;
+            --visible-slides: 1;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .expectations {
+        padding: 50px 0;
+        &__title {
+            margin-bottom: 36px;
+        }
+    }
+
+}
+
