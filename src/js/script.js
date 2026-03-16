@@ -4,6 +4,7 @@ import 'virtual:svg-icons-register';
 
 // import calcScroll from './modules/calcScroll';
 import scrollUp from './modules/scrollUp';
+import menuScroll from './modules/menuScroll';
 import burger from './modules/burger';
 import modals from './modules/modals';
 import sliderInfinity from './modules/sliders/sliderInfinity';
@@ -20,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // const year = document.querySelector('.footer__date span');
     // year.innerHTML = new Date().getFullYear();
 
-    scrollUp();
+    // scrollUp();
     // calcScroll();
 
     // sliderInfinity('.slider-infinity');
@@ -28,7 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // carouselInfinite('.carousel__infinite');
     carouselMultyple('.therapy-perks__carousel');
     carouselMultyple('.about__carousel');
+    carouselMultyple('.popular__carousel', 'btns');
     
+    menuScroll();
     burger();
     accordeon('.faq-main');
     // modals();

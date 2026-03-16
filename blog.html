@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" >
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="apple-touch-icon" sizes="180x180" href="/src/icons/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/src/icons/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/src/icons/favicon/favicon-16x16.png">
+		<link rel="icon" type="image/x-icon" href="/src/icons/favicon/favicon.ico">
+		
+		<title>YOUmi</title>
+	</head>
+	<body>
+		<header class="header" style="background-color: var(--white)">
+			<!-- Навигационная панель -->
+			<div class="nav-panel">
+				<div class="container">
+					<div class="nav-panel__wrapper">
+						<div class="nav-panel__logo">
+							<a href="index.html">
+								<svg class="icon">
+									<use xlink:href="#icon-logo"></use>
+								</svg>
+							</a>
+						</div>
+						<nav >
+							<ul class="nav-panel__menu">
+								<li><a href="about.html">О нас</a></li>
+								<li><a href="rates.html">Тарифы</a></li>
+								<li><a href="psyhologists.html">Психологам</a></li>
+								<li><p>Материалы</p>
+									<ul class="nav-panel__submenu">
+										<li><a href="blog.html">Блог</a></li>
+										<li><a href="webinars.html">Вебинары</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+						<a href="#" class="btn-link nav-panel__btn-pa">Личный кабинет</a>
+						<button class="nav-panel__btn-open">
+							<svg class="icon">
+								<use xlink:href="#icon-menu"></use>
+							</svg>
+						</button>
+						<!-- бургер -->
+						<div class="burger ">
+							<button class="burger__close">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5.34665 3.77108C4.96656 3.55915 4.63176 3.45043 4.36129 3.47533C2.91668 3.60835 3.89144 6.34785 4.95971 7.32937C7.05064 9.2505 9.83316 12.033 10.2919 12.4917C11.0723 13.2722 16.7253 17.6964 17.2164 18.1875C17.6093 18.5803 19.3445 19.949 20.6312 19.7468C20.9679 20.0811 22.4357 19.1278 21.1442 18.4048C14.8966 14.9078 11.6 7.25776 5.34665 3.77108Z" fill="#7872B9" />
+									<path d="M20.2306 5.34592C20.4426 4.96583 20.5513 4.63103 20.5264 4.36056C20.3934 2.91595 17.6539 3.8907 16.6723 4.95898C14.7512 7.04991 11.9687 9.83243 11.51 10.2911C10.7295 11.0716 6.30535 16.7246 5.81425 17.2157C5.42137 17.6086 4.05266 19.3437 4.25493 20.6305C3.92058 20.9672 4.87394 22.4349 5.59687 21.1434C9.09395 14.8959 16.7439 11.5992 20.2306 5.34592Z" fill="#7872B9" />
+								</svg>
+							</button>
+							<ul class="burger__menu ">
+								<li><a href="about.html">О нас</a></li>
+								<li><a href="rates.html">Тарифы</a></li>
+								<li><a href="psyhologists.html">Психологам</a></li>
+								<li><a href="blog.html">Блог</a></li>
+								<li><a href="webinars.html">Вебинары</a></li>
+								<li><a href="#">Личный кабинет</a></li>
+								<li><a href="#faq">Вопросы-ответы</a></li>
+								<li><a href="#">Войти
+										<svg class="icon">
+											<use xlink:href="#icon-arrow-logIn"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+							<div class="burger__social">
+								<div class="burger__icon">
+									<svg class="icon">
+										<use xlink:href="#icon-vk"></use>
+									</svg>
+								</div>
+								<div class="burger__icon">
+									<svg class="icon">
+										<use xlink:href="#icon-telegram"></use>
+									</svg>
+								</div>
+								<div class="burger__icon">
+									<svg class="icon">
+										<use xlink:href="#icon-dzen"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<!-- окончание бургера -->
+					</div>
+				</div>
+			</div>
+			
+			<!-- изменяемый контент шапки -->
+			<!-- Категории -->
+			<div class="category">
+				<div class="container">
+					<div class="category__nav">
+						<h3 class="category__title">Категории</h3>
+						<!-- поиск search -->
+						<form action="#" class="form-search">
+							<input type="text" class="form-search__inpt">
+							<button class="form-search__search-btn">
+								<img src="/src/img/search.svg" alt="search">
+							</button>
+						</form>
+					</div>
+					<!-- список категорий -->
+					<ul class="category__lists">
+						<li class="category__item">
+							<a href="#">Отношения с&nbsp;партнером</a>
+							<img src="/src/img/category1.svg" alt="отношения">
+						</li>
+						<li class="category__item">
+							<a href="#">Чувство тревоги</a>
+							<img src="/src/img/category2.svg" alt="Чувство тревоги">
+						</li>
+						<li class="category__item">
+							<a href="#">Эмоции</a>
+							<img src="/src/img/category3.svg" alt="Эмоции">
+						</li>
+						<li class="category__item">
+							<a href="#">Депрессивное состояние</a>
+							<img src="/src/img/category4.svg" alt="Депрессивное состояние">
+						</li>
+						<li class="category__item">
+							<a href="#">Отношения с&nbsp;партнером</a>
+							<img src="/src/img/category1.svg" alt="отношения">
+						</li>
+						<li class="category__item">
+							<a href="#">Чувство тревоги</a>
+							<img src="/src/img/category2.svg" alt="Чувство тревоги">
+						</li>
+						<li class="category__item">
+							<a href="#">Эмоции</a>
+							<img src="/src/img/category3.svg" alt="Эмоции">
+						</li>
+						<li class="category__item">
+							<a href="#">Депрессивное состояние</a>
+							<img src="/src/img/category4.svg" alt="Депрессивное состояние">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<!-- Популярное -->
+		<section class="popular">
+			<div class="container">
+				<h2 class="popular__title">Популярное</h2>
+				
+				<div class="carousel popular__carousel">
+					<!-- Основной контейнер со слайдами -->
+					 <div class="carousel__wrapper">
+						
+						 <div class="carousel__field">
+							 <div class="carousel__slide carousel__slide-1">
+								 <div class="popular__content">
+									 <a href="#">Как пережить расставание? 1</a>
+									 <img src="src/img/popular-foto.jpg" alt="Светлана">
+								 </div>
+							 </div>
+							 <div class="carousel__slide carousel__slide-1">
+								 <div class="popular__content">
+									 <a href="#">Как пережить расставание? 2</a>
+									 <img src="src/img/popular-foto.jpg" alt="Светлана">
+								 </div>
+							 </div>
+							 <div class="carousel__slide carousel__slide-1">
+								 <div class="popular__content">
+									 <a href="#">Как пережить расставание? 3</a>
+									 <img src="src/img/popular-foto.jpg" alt="Светлана">
+								 </div>
+							 </div>
+							 <div class="carousel__slide carousel__slide-1">
+								 <div class="popular__content">
+									 <a href="#">Как пережить расставание? 4</a>
+									 <img src="src/img/popular-foto.jpg" alt="Светлана">
+								 </div>
+							 </div>
+							 <div class="carousel__slide carousel__slide-1">
+								 <div class="popular__content">
+									 <a href="#">Как пережить расставание? 5</a>
+									 <img src="src/img/popular-foto.jpg" alt="Светлана">
+								 </div>
+							 </div>
+							 <div class="carousel__slide carousel__slide-1">
+								 <div class="popular__content">
+									 <a href="#">Как пережить расставание? 6</a>
+									 <img src="src/img/popular-foto.jpg" alt="Светлана">
+								 </div>
+							 </div>
+							 
+							 
+						 </div>
+					 </div>
+
+					<!-- Кнопки навигации -->
+					<button class="carousel__btn carousel__btn_prev" aria-label="Предыдущий слайд">
+						<svg class="icon">
+							<use xlink:href="#icon-btn-prev"></use>
+						</svg>
+					</button>
+					<button class="carousel__btn carousel__btn_next" aria-label="Следующий слайд">
+						<svg class="icon">
+							<use xlink:href="#icon-btn-next"></use>
+						</svg>
+					</button>
+				</div>
+							
+			</div>
+		</section>
+
+		<!-- Подберите своего психолога онлайн -->
+		<section class="selection">
+			<div class="container">
+				<div class="selection__wrapper">
+					<h2 class="title-2 selection__title">Подберите своего психолога онлайн</h2>
+					<div class="selection__img">
+						<img src="/src/img/yor-psyh.svg" alt="picture">
+					</div>
+					<a href="#" class="selection__btn btn">Подобрать психолога</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- футер -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__logo">
+						<a href="index.html">
+							<svg class="icon">
+								<use xlink:href="#icon-logo"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="footer__info">
+						<div class="footer__info-txt">
+							<p>Сотрудничество</p>
+							<a href="#">@youmiwork</a>
+						</div>
+						<div class="footer__info-txt">
+							<p>Поддержка клиентов</p>
+							<a href="#">@youmi</a>
+						</div>
+					</div>
+					<div class="footer__menu">
+						<ul>
+							<li><a href="about.html">О нас</a></li>
+							<li><a href="rates.html">Тарифы</a></li>
+							<li><a href="psyhologists.html">Психологам</a></li>
+						</ul>
+						<ul>
+							<li><a href="blog.html">Блог</a></li>
+							<li><a href="#faq">Вопрос &mdash; ответ</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="footer__links">
+						 <a href="#">Обработка персональных данных</a>
+						 <a href="#">Пользовательское соглашение</a>
+						 <a href="#">Юридические документы</a>
+					</div>
+					<div class="footer__social">
+						<div class="footer__icon">
+							<svg class="icon">
+								<use xlink:href="#icon-vk"></use>
+							</svg>
+						</div>
+						<div class="footer__icon">
+							<svg class="icon">
+								<use xlink:href="#icon-telegram"></use>
+							</svg>
+						</div>
+						<div class="footer__icon">
+							<svg class="icon">
+								<use xlink:href="#icon-dzen"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<!-- <div class="popup" >
+			<div class="popup__content" >
+				<button class="popup__close"></button>
+			</div>
+		</div> -->
+		<!-- <div class="modal" >
+			<div class="modal__content">
+				<div class="modal__close"></div>
+				
+			</div>
+		</div> -->
+
+		<!-- <div class="modal-success ok">
+			<div class="modal-success__content ">
+				<h4>Ваша заявка успешно отправлена!</h4>
+				<p>Наш менеджер скоро свяжется с вами</p>
+			</div>
+		</div> -->
+		<!-- <div class="modal-success error">
+			<div class="modal-success__content ">
+				<h4>Что-то пошло не так!</h4>
+				<p>Попробуйте позже или позвоните нам!</p>
+			</div>
+		</div> -->
+
+
+		<!-- выбор для браузера между webp и jpg -->
+    <!-- <picture>
+		 1. Сначала указываем правила с media-запросами
+		<source media="(max-width: 576px)" srcset="/webp-images/second/plane-mob.webp" type="image/webp">
+		<source media="(max-width: 576px)" srcset="/src/img/second/plane-mob.png" type="image/png">
+		
+		2. Затем общие правила (для всех остальных размеров)
+		<source srcset="/webp-images/second/plane.webp" type="image/webp">
+		<source srcset="/src/img/second/plane.png" type="image/png">
+		
+		3. Фолбек для старых браузеров 
+		<img src="/src/img/second/plane.png" alt="самолет" loading="lazy">
+	</picture> -->
+
+    <!-- <svg class="icon">
+		<use xlink:href="#icon-"></use>
+	</svg> -->
+
+    <!-- <a href="#" class="up">
+        <svg width="38" height="38" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="16" fill="#9743B5"/>
+            <path d="M14.5 25C14.5 25.8284 15.1716 26.5 16 26.5C16.8284 26.5 17.5 25.8284 17.5 25H14.5ZM17.0607 4.93934C16.4749 4.35355 15.5251 4.35355 14.9393 4.93934L5.3934 14.4853C4.80761 15.0711 4.80761 16.0208 5.3934 16.6066C5.97918 17.1924 6.92893 17.1924 7.51472 16.6066L16 8.12132L24.4853 16.6066C25.0711 17.1924 26.0208 17.1924 26.6066 16.6066C27.1924 16.0208 27.1924 15.0711 26.6066 14.4853L17.0607 4.93934ZM17.5 25L17.5 6H14.5L14.5 25H17.5Z" fill="white"/>
+        </svg>
+    </a> -->
+		<script type="module" src="/src/js/script.js"></script>
+	</body>
+</html>

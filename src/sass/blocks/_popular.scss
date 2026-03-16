@@ -1,0 +1,164 @@
+.popular {
+    background: var(--bg-color);
+    padding: 110px 0 130px;
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        margin-bottom: 60px;
+        margin-left: 100px;
+    }
+    &__carousel {
+        --visible-slides: 3;
+        padding: 0 100px;
+    }
+    &__content {
+        border-radius: 20px;
+        width: 280px;
+        height: 240px;
+        background: var(--white);
+        box-shadow: 5px 10px 0 var(--blue);
+        padding: 20px 40px;
+        a {
+            display: block;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 140%;
+            letter-spacing: 0.01em;
+            margin-bottom: 20px;
+        }
+        img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+    }
+    .carousel__wrapper {
+        height: 250px;
+        overflow: hidden;
+    }
+    .carousel__field {
+        gap: 45px;
+    }
+}
+.popular__carousel {
+    .carousel__btn {
+        display: block;
+        width: 34px;
+        height: 58px;
+    }
+    .carousel__btn_prev {
+        left: 0px;
+    }
+    .carousel__btn_next {
+        right: 0px;
+    }
+}
+@media (max-width: 1200px) {
+    .popular {
+        &__carousel {
+            --visible-slides: 2;
+            padding: 0 90px;
+        }
+        &__content {
+            width: 350px;
+        }
+        .carousel__wrapper {
+            height: 250px;
+            overflow: hidden;
+        }
+        .carousel__field {
+            gap: 60px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .popular {
+        padding: 90px 0 110px;
+        &__title {
+            margin-bottom: 40px;
+            margin-left: 60px;
+        }
+        &__carousel {
+            padding: 0 60px;
+        }
+        &__content {
+            width: 260px;
+        }
+        .carousel__field {
+            gap: 35px;
+        }
+    }
+    .popular__carousel {
+        .carousel__btn {
+            width: 24px;
+            height: 38px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .popular {
+        background: var(--bg-color);
+        padding: 80px 0 ;
+        &__title {
+            margin-left: 40px;
+        }
+        &__carousel {
+            --visible-slides: 1;
+            padding: 0 40px;
+        }
+        &__content {
+            width: 100%;
+        }
+        .carousel__wrapper {
+            height: 250px;
+            overflow: hidden;
+        }
+        .carousel__field {
+            gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .popular {
+        padding: 50px 0;
+        &__title {
+            font-size: 18px;
+            margin-bottom: 36px;
+            margin-left: 30px;
+        }
+        &__carousel {
+            --visible-slides: 1;
+            padding: 0 20px;
+        }
+        &__content {
+            width: 98%;
+            padding: 20px 30px;
+            a {
+                font-size: 18px;
+            }
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        .carousel__wrapper {
+            min-height: 250px;
+            overflow: hidden;
+        }
+        .carousel__field {
+            gap: 10px;
+        }
+    }
+    .popular__carousel {
+        .carousel__btn {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+

@@ -10,6 +10,7 @@
 @use 'ui/forms';
 @use 'ui/popup';
 @use 'ui/modal';
+@use 'ui/search';
 
 @use 'libs/slider';
 @use 'libs/carousel';
@@ -41,3 +42,9 @@
 @use 'blocks/psyhologists-expectations';
 @use 'blocks/psyhologists-steps';
 @use 'blocks/psyhologists-welcome';
+// blog
+@use 'blocks/blog-category';
+
+// popular
+@use 'blocks/popular';
+@use 'blocks/selection';

@@ -1,5 +1,12 @@
 .nav-panel {
-    margin-bottom: 92px;
+    padding: 43px 0;
+    width: 100%;
+    height: 130px;
+    position: fixed;
+    top:0;
+    background: transparent;
+    z-index: 200;
+    transition: all .3s;
     &__wrapper {
         width: 100%;
         display: flex;
@@ -66,7 +73,10 @@
         display: none;
     }
 }
-
+.nav-panel.scroll {
+    background: var(--white);
+    box-shadow: 0 5px 25px 0 rgba(130, 145, 159, 0.2);
+}
 @media (max-width: 1200px) {
     .nav-panel__menu {
             gap: 40px;

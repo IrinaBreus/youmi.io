@@ -74,7 +74,7 @@
     &__btn_next {
         right: 10px;
     }
-
+    
 }
 .animated {
     transition: transform 0.5s ease;
@@ -83,7 +83,6 @@
 .dragging {
     transition: none !important;
 }
-
 
 @media (max-width: 992px) {
     .carousel {

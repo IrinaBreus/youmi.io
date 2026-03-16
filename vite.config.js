@@ -20,6 +20,7 @@ export default defineConfig({
         rates: resolve(__dirname, 'rates.html'),
         tariff: resolve(__dirname, 'tariff.html'),
         psyhologists: resolve(__dirname, 'psyhologists.html'),
+        blog: resolve(__dirname, 'blog.html'),
         // catalog: resolve(__dirname, 'catalog.html'),
         // blog: resolve(__dirname, 'blog.html'),
       },
